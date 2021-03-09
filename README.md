@@ -1,2 +1,2 @@
 # AulaPraticaRefactoring
-Repositório usado para a execução da aula p´ratica de práticas de Refactoring em 2020.
+Repositório usado para a execução da aula prática de práticas de Refactoring em 2020.
