@@ -23,4 +23,24 @@ public class Movie {
   public String getTitle (){
       return _title;
   }
+  
+  public double getCharge(int daysRented) {
+  	double thisCharge = 0;
+   	switch (_priceCode) {
+   	  case REGULAR:
+   	     thisCharge += 2;
+   	     if (daysRented > 2)
+   	        thisCharge += (daysRented - 2) * 1.5;
+   	     break;
+   	  case NEW_RELEASE:
+   	     thisCharge += daysRented * 3;
+   	     break;	
+   	  case CHILDRENS:
+   	     thisCharge += 1.5;
+   	     if (daysRented > 3)
+   	        thisCharge += (daysRented - 3) * 1.5;
+   	     break;
+   	 }
+   	 return thisCharge;
+  }
 }

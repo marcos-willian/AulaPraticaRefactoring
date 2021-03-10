@@ -31,7 +31,8 @@ public class Customer {
      result += "You earned " + String.valueOf(getTotalFrequentRenterPoints()) +
              " frequent renter points";
      return result;
-   }
+  }
+  
   private double getTotalCharge() {
       double result = 0;
       Enumeration<Rental> rentals = _rentals.elements();
@@ -41,6 +42,7 @@ public class Customer {
       }
       return result;
   }
+  
   private int getTotalFrequentRenterPoints(){
       int result = 0;
       Enumeration<Rental> rentals = _rentals.elements();
@@ -50,6 +52,7 @@ public class Customer {
       }
       return result;
   }
+  
   public String htmlStatement() {
       Enumeration<Rental> rentals = _rentals.elements();
       String result = "<H1>Rentals for <EM>" + getName() + "</EM></H1><P>\n";
