@@ -5,3 +5,6 @@
 /ChildrensPrice.class
 /NewReleasePrice.class
 /RegularPrice.class
+/Statement.class
+/TextStatement.class
+/HtmlStatement.class
